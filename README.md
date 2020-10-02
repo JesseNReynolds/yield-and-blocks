@@ -195,7 +195,7 @@ Let's call our method, passing in the following array as an argument:
 
 ```ruby
 hello_t(["Tim", "Tom", "Jim"]) do |name|
-  if name.start_with?("T")
+  if name.to_s.start_with?("T")
     puts "Hi, #{name}"
   end
 end
